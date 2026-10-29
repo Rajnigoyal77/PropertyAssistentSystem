@@ -137,10 +137,26 @@ public class propertyFinder {
             pst.setString(2, txtarea.getValue());
             pst.setString(3, txtPropt.getValue());   // Plot / Construction
             pst.setString(4, txtConst.getValue());
-            pst.setInt(5, Integer.parseInt(txtMin.getText()));
-            pst.setInt(6, Integer.parseInt(txtMax.getText()));
+//            pst.setInt(5, Integer.parseInt(txtMin.getText()));
+//            pst.setInt(6, Integer.parseInt(txtMax.getText()));
 
+            int minPrice, maxPrice;
 
+            try {
+                minPrice = Integer.parseInt(txtMin.getText().trim());
+                maxPrice = Integer.parseInt(txtMax.getText().trim());
+            } catch (NumberFormatException exp) {
+                System.out.println("Please enter valid minimum and maximum prices.");
+                return;
+            }
+
+            if (minPrice > maxPrice) {
+                System.out.println("Minimum price cannot be greater than maximum price.");
+                return;
+            }
+
+            pst.setInt(5, minPrice);
+            pst.setInt(6, maxPrice);
 
 
             ResultSet rs = pst.executeQuery();
