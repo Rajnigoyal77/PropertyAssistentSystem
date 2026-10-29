@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="644.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dealsviewcont.dealsController">
+   <children>
+      <Label layoutX="297.0" layoutY="39.0" prefHeight="54.0" prefWidth="287.0" text="Finalized Deals" textFill="#38c91b">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="230.0" layoutY="181.0" prefHeight="27.0" prefWidth="110.0" text="Seller Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="118.0" prefHeight="27.0" prefWidth="126.0" text="Property Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="247.0" prefHeight="27.0" prefWidth="110.0" text="Buyer Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="320.0" prefHeight="27.0" prefWidth="118.0" text="Final Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="403.0" layoutY="181.0" prefHeight="27.0" prefWidth="192.0" text="Owner Contact Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="247.0" prefHeight="20.0" prefWidth="154.0" text="Contact Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="320.0" prefHeight="27.0" prefWidth="126.0" text="Down Payment">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="386.0" layoutY="320.0" prefHeight="20.0" prefWidth="110.0" text="Date of Deal">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="569.0" layoutY="320.0" prefHeight="20.0" prefWidth="110.0" text="Registry Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="303.0" layoutY="399.0" prefHeight="27.0" prefWidth="118.0" text="Adv . Recieved">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="116.0" layoutY="399.0" prefHeight="27.0" prefWidth="150.0" text="Total Commission">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="399.0" prefHeight="20.0" prefWidth="110.0" text="Balance">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="478.0" prefHeight="20.0" prefWidth="110.0" text="Deal Status">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="txtRad1" layoutX="288.0" layoutY="482.0" mnemonicParsing="false" text="Ongoing ">
+         <toggleGroup>
+            <ToggleGroup fx:id="rad" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="txtRad2" layoutX="394.0" layoutY="482.0" mnemonicParsing="false" text="Completed" toggleGroup="$rad">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="txtRad3" layoutX="524.0" layoutY="482.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="110.0" text="Cancelled" toggleGroup="$rad">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <TextField fx:id="txtProp" layoutX="218.0" layoutY="152.0" />
+      <TextField fx:id="txtSeller" layoutX="210.0" layoutY="207.0" />
+      <TextField fx:id="txtOwnerC" layoutX="396.0" layoutY="206.0" prefHeight="26.0" prefWidth="199.0" />
+      <TextField fx:id="txtBuyer" layoutX="228.0" layoutY="273.0" />
+      <TextField fx:id="txtCont" layoutX="413.0" layoutY="273.0" />
+      <TextField fx:id="txtFinalA" layoutX="41.0" layoutY="354.0" />
+      <TextField fx:id="txtDown" layoutX="198.0" layoutY="354.0" prefHeight="26.0" prefWidth="137.0" />
+      <TextField fx:id="txtCom" layoutX="117.0" layoutY="427.0" />
+      <TextField fx:id="txtAdv" layoutX="293.0" layoutY="427.0" prefHeight="26.0" prefWidth="138.0" />
+      <TextField fx:id="txtBal" layoutX="455.0" layoutY="427.0" prefHeight="26.0" prefWidth="138.0" />
+      <Button layoutX="303.0" layoutY="545.0" mnemonicParsing="false" onAction="#doSave" prefHeight="26.0" prefWidth="90.0" text="Save">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="425.0" layoutY="545.0" mnemonicParsing="false" onAction="#doModify" prefHeight="26.0" prefWidth="90.0" text="Modify">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="407.0" layoutY="150.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="30.0" prefWidth="126.0" text="Fetch Details">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <DatePicker fx:id="txtDate1" layoutX="348.0" layoutY="355.0" />
+      <DatePicker fx:id="txtDate2" layoutX="537.0" layoutY="355.0" />
+      <Button layoutX="549.0" layoutY="545.0" mnemonicParsing="false" onAction="#doClear" prefHeight="26.0" prefWidth="90.0" text="Clear">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="746.0" layoutY="12.0" mnemonicParsing="false" onAction="#doBack" text="&lt;-Back" textFill="#328c11">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="104.0" fitWidth="126.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@haven.png" />
+         </image>
+      </ImageView>
+      <Line endX="505.8070068359375" endY="0.7000045776367188" layoutX="266.0" layoutY="118.0" startX="-226.0" startY="-7.62939453125E-6" />
+      <Line endX="479.5999755859375" endY="-7.62939453125E-6" layoutX="291.0" layoutY="615.0" startX="-250.69287109375" startY="0.90704345703125" />
+      <Line endX="-236.39999389648438" endY="487.199951171875" layoutX="276.0" layoutY="128.0" startX="-236.5" startY="-10.500007629394531" />
+      <Line endX="495.3070068359375" endY="486.2928466796875" layoutX="276.0" layoutY="128.0" startX="495.3070068359375" startY="-8.799995422363281" />
+      <Line endX="66.79998779296875" endY="-7.62939453125E-6" layoutX="386.0" layoutY="93.0" startX="-80.4000244140625" startY="-7.62939453125E-6" stroke="#15df30" />
+      <Line endX="-5.0" endY="-7.62939453125E-6" layoutX="565.0" layoutY="93.0" startX="-100.0" stroke="#15df30" />
+   </children>
+</AnchorPane>

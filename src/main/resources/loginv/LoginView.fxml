@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="691.0" prefWidth="933.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginc.logincp">
+   <children>
+      <Label layoutX="404.0" layoutY="32.0" prefHeight="38.0" prefWidth="114.0" text="HAVEN" textFill="#025124">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="72.0" prefHeight="27.0" prefWidth="257.0" text="Property Management System">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="572.0" layoutY="262.0" opacity="0.91" prefHeight="35.0" prefWidth="251.0" text="     Welcome  Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="635.0" layoutY="297.0" prefHeight="27.0" prefWidth="127.0" text="Sign In to continue">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="408.0" prefHeight="27.0" prefWidth="127.0" text="Password">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="544.0" layoutY="482.0" mnemonicParsing="false" onAction="#dologin" prefHeight="38.0" prefWidth="272.0" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="638.0" layoutY="534.0" mnemonicParsing="false" onAction="#doExit" prefHeight="35.0" prefWidth="84.0" text="Exit">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <PasswordField fx:id="txtfpass" layoutX="519.0" layoutY="435.0" prefHeight="35.0" prefWidth="334.0" promptText="Enter Password" />
+      <TextField fx:id="txtUser" layoutX="519.0" layoutY="364.0" prefHeight="35.0" prefWidth="334.0" promptText="Enter Username" />
+      <Label layoutX="527.0" layoutY="332.0" prefHeight="27.0" prefWidth="114.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="223.0" layoutY="86.0" startX="-100.0" stroke="#025124" strokeWidth="3.0" />
+      <Line endX="100.0" layoutX="694.0" layoutY="88.0" startX="-100.0" stroke="#025124" strokeWidth="3.0" />
+      <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#1f93ff00" height="527.0" layoutX="484.0" layoutY="118.0" mouseTransparent="true" opacity="0.53" stroke="BLACK" strokeType="INSIDE" width="405.0" />
+      <ImageView fitHeight="115.0" fitWidth="134.0" layoutX="629.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@haven.png" />
+         </image></ImageView>
+      <ImageView fitHeight="542.0" fitWidth="450.0" layoutX="42.0" layoutY="118.0" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ChatGPT%20Image%20Jul%2030,%202026,%2010_34_14%20PM.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

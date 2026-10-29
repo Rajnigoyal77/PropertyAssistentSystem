@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="charts.chartscontroller">
+   <children>
+      <PieChart fx:id="piechart" layoutX="197.0" layoutY="139.0" prefHeight="446.0" prefWidth="550.0" />
+      <Label layoutX="316.0" layoutY="26.0" prefHeight="60.0" prefWidth="312.0" text="City Analatics" textFill="#3d810f">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="132.0" fitWidth="161.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../barchartv/haven.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBack" layoutX="747.0" layoutY="26.0" mnemonicParsing="false" onAction="#doBack" text="&lt;-Back" textFill="#4fbc33">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

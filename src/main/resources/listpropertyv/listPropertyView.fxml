@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="btnBack" prefHeight="682.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listpropertycontrol.listPropertyC">
+   <children>
+      <Label alignment="CENTER" layoutX="266.0" layoutY="22.0" prefHeight="62.0" prefWidth="316.0" text="List The Property" textFill="#32c115">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="173.0" prefHeight="27.0" prefWidth="73.0" text="City">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="424.0" layoutY="245.0" text="Left">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="305.0" layoutY="245.0" text="Rear">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="191.0" layoutY="245.0" text="Front">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="323.0" layoutY="173.0" prefHeight="27.0" prefWidth="81.0" text="Area">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="442.0" layoutY="113.0" text="Listed Properties">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="94.0" layoutY="113.0" text="Mobile Number">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="608.0" layoutY="245.0" text="Size (Sq.Yd)">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="85.0" layoutY="173.0" prefHeight="27.0" prefWidth="176.0" text="Location/Address">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="298.0" layoutY="475.0" text="Other Info:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="336.0" layoutY="395.0" text="Total price Demanded">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="169.0" layoutY="395.0" text="Approved By">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="333.0" layoutY="268.0" />
+      <Label layoutX="75.0" layoutY="245.0" text="Direction">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="531.0" layoutY="245.0" text="Right">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="798.0" layoutY="53.0" prefHeight="27.0" prefWidth="118.0" text="Property Pics" textFill="#4bcc14">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtMob" layoutX="63.0" layoutY="147.0" prefHeight="26.0" prefWidth="186.0" />
+      <TextField fx:id="txtCity" layoutX="464.0" layoutY="202.0" prefHeight="26.0" prefWidth="134.0" />
+      <TextField fx:id="txtAddr" layoutX="54.0" layoutY="202.0" prefHeight="26.0" prefWidth="205.0" />
+      <TextField fx:id="txtSize" layoutX="608.0" layoutY="272.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="txtFront" layoutX="167.0" layoutY="272.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="txtRear" layoutX="279.0" layoutY="272.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="txtLeft" layoutX="385.0" layoutY="272.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="txtRight" layoutX="496.0" layoutY="272.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="txtDir" layoutX="53.0" layoutY="272.0" prefHeight="26.0" prefWidth="98.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebf2fa" height="157.0" layoutX="791.0" layoutY="91.0" stroke="BLACK" strokeType="INSIDE" width="133.0" />
+      <ImageView fx:id="Prev1" fitHeight="157.0" fitWidth="134.0" layoutX="791.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+      <RadioButton fx:id="txtCom" layoutX="281.0" layoutY="332.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" text="Commerical">
+         <toggleGroup>
+            <ToggleGroup fx:id="radio1" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="txtAgr" layoutX="75.0" layoutY="337.0" mnemonicParsing="false" text="Agriculture" toggleGroup="$radio1">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="txtRes" layoutX="175.0" layoutY="333.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="90.0" text="Residental" toggleGroup="$radio1">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="txtPlot" layoutX="461.0" layoutY="338.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Plot">
+         <toggleGroup>
+            <ToggleGroup fx:id="radio2" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="txtConst" layoutX="530.0" layoutY="334.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="118.0" text="Constucted" toggleGroup="$radio2">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <TextField fx:id="txtPrice" layoutX="347.0" layoutY="434.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="txtInfo" layoutX="173.0" layoutY="502.0" prefHeight="38.0" prefWidth="394.0" />
+      <ComboBox fx:id="txtCApp" layoutX="158.0" layoutY="434.0" prefWidth="150.0" />
+      <ComboBox fx:id="txtCombo" layoutX="433.0" layoutY="147.0" onAction="#doCombo" prefWidth="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dddedf" height="171.0" layoutX="797.0" layoutY="315.0" stroke="BLACK" strokeType="INSIDE" width="134.0" />
+      <Button fx:id="doPrev1" layoutX="823.0" layoutY="257.0" mnemonicParsing="false" onAction="#doPrev1" text="Browse">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="doPrev2" layoutX="811.0" layoutY="502.0" mnemonicParsing="false" onAction="#doPrev2" prefHeight="30.0" prefWidth="73.0" text="Browse">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="144.0" layoutY="566.0" mnemonicParsing="false" onAction="#doList" prefHeight="26.0" prefWidth="94.0" text="List Now">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="465.0" layoutY="566.0" mnemonicParsing="false" onAction="#doRemove" text="Remove Listing">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="286.0" layoutY="566.0" mnemonicParsing="false" onAction="#doUpdate" text="Update Details">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="270.0" layoutY="146.0" mnemonicParsing="false" onAction="#doFetch" prefHeight="26.0" prefWidth="94.0" text="Fetch">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fx:id="prev2" fitHeight="165.0" fitWidth="133.0" layoutX="798.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtArea" layoutX="290.0" layoutY="202.0" prefHeight="26.0" prefWidth="134.0" />
+      <ImageView fitHeight="81.0" fitWidth="88.0" layoutX="10.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@haven.png" />
+         </image>
+      </ImageView>
+      <Line endX="237.79998779296875" layoutX="167.0" layoutY="323.0" startX="-96.40000915527344" startY="-1.0" />
+      <Line endX="218.79998779296875" layoutX="187.0" layoutY="376.0" startX="-116.40000915527344" />
+      <Line endX="100.0" layoutX="545.0" layoutY="329.0" startX="-95.0" startY="-1.0" />
+      <Line endX="96.0" layoutX="550.0" layoutY="376.0" startX="-100.0" />
+      <Line endX="-99.5" endY="-41.5" layoutX="745.0" layoutY="372.0" startX="-99.5" startY="3.5" />
+      <Line endX="-99.5" endY="-56.5" layoutX="549.0" layoutY="385.0" startX="-99.5" startY="-7.5" />
+      <Line endX="-99.5" endY="-41.5" layoutX="504.0" layoutY="363.0" startX="-99.5" startY="13.5" />
+      <Line endX="-103.90000915527344" endY="-44.5" layoutX="174.0" layoutY="367.0" startX="-103.90000915527344" startY="8.5" />
+      <Line endX="569.2999877929688" endY="1.0999984741210938" layoutX="191.0" layoutY="88.0" startX="-145.40000915527344" startY="7.62939453125E-6" />
+      <Line endX="547.3999633789062" endY="7.62939453125E-6" layoutX="219.0" layoutY="636.0" startX="-173.4500274658203" startY="-0.0928955078125" />
+      <Line endX="-155.00001525878906" endY="537.2000122070312" layoutX="201.0" layoutY="98.0" startX="-155.90000915527344" startY="-9.999992370605469" />
+      <Line endX="566.1069946289062" endY="537.2000122070312" layoutX="201.0" layoutY="98.0" startX="559.7999877929688" startY="-8.400001525878906" />
+      <Line endX="-12.39996337890625" endY="7.62939453125E-6" layoutX="406.0" layoutY="68.0" startX="-73.20001220703125" startY="7.62939453125E-6" stroke="#029629" />
+      <Line endX="13.60003662109375" endY="7.62939453125E-6" layoutX="508.0" layoutY="67.0" startX="-100.0" stroke="#498e4d" />
+      <Button fx:id="btnBack" layoutX="842.0" layoutY="22.0" mnemonicParsing="false" onAction="#doBack" prefHeight="30.0" prefWidth="82.0" text="&lt;-  Back " textFill="#4e9110">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
